@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_280dp"
+        android:background="@drawable/dubaochayrung1">
+
+        <ImageView
+            android:id="@+id/img_kimquay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_220dp"
+            android:layout_marginEnd="@dimen/size_92dp"
+            android:src="@drawable/kimquay" />
+
+    </RelativeLayout>
+<LinearLayout
+    android:layout_below="@id/rl_image"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="5"
+    android:layout_marginTop="20dp"
+    android:gravity="center_horizontal">
+    <Button
+        android:id="@+id/btn_cap1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Cấp i"/>
+    <Button
+        android:id="@+id/btn_cap2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="cấp ii"/>
+    <Button
+        android:id="@+id/btn_cap3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="cấp iii"/>
+    <Button
+        android:id="@+id/btn_cap4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Cấp iv"/>
+    <Button
+        android:id="@+id/btn_cap5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="cấp v"/>
+</LinearLayout>
+
+</RelativeLayout>
